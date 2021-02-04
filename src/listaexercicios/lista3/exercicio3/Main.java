@@ -11,7 +11,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		List<Integer> lista = Arrays.asList(11, 247, 345, 444, 578, 6879, 700, 8456, 58, 59);
-		System.out.println("Lista:"+lista+"\n");
+		System.out.println("Lista:" + lista + "\n");
 
 		Optional<Integer> max = lista.stream().max(Comparator.naturalOrder());
 		System.out.println("Maior valor da lista: " + max.get() + "\n");
@@ -22,11 +22,11 @@ public class Main {
 		long count = lista.stream().count();
 		System.out.println("Quantidade de números na lista: " + count + "\n");
 
+		
 		int cont = 1;
 		Random geradorNumero = new Random();
 		int[] listaAleatoria = new int[100];
-		
-		
+
 		System.out.println("Gerado automaticamente:");
 		do {
 			for (int i = 0; i < listaAleatoria.length; i++) {

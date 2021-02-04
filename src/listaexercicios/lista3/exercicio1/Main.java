@@ -10,8 +10,7 @@ public class Main {
 	public static void main(String[] args) {
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 9, 8, 22, 15, 15, 8, 4, 5, 6);
 		Integer num = 0;
-		
-		
+
 		/*
 		 * Scanner l = new Scanner(System.in);
 		 * System.out.println("Informe o último número a lista: "); num = l.nextInt();
@@ -33,19 +32,19 @@ public class Main {
 		// ímpares sem repetição
 		System.out.println("Números ímpares sem repetição:");
 		list.stream().distinct().filter(e -> e % 2 != 0).forEach(e -> System.out.println(e));
-		
+
 		// pares sem repetição
 		System.out.println("Números pares sem repetição:");
 		list.stream().distinct().filter(e -> e % 2 == 0).forEach(e -> System.out.println(e));
-		
-		// a partir do  5 algorismo sem repetição
+
+		// a partir do 5 algorismo sem repetição
 		System.out.println("Números a partir do  5 algorismo:");
-		list.stream().distinct().skip(5).forEach(e -> System.out.println(e));		
-		
-		//todos os números multiplicados por 4 
-		
+		list.stream().distinct().skip(5).forEach(e -> System.out.println(e));
+
+		// todos os números multiplicados por 4
+
 		System.out.println("Números multiplicados por 4: ");
-		list.stream().distinct().filter(e -> e % 4 ==0).forEach(e -> System.out.println(e));		
+		list.stream().distinct().filter(e -> e % 4 == 0).forEach(e -> System.out.println(e));
 	}
 
 }
