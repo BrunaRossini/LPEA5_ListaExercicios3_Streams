@@ -18,13 +18,12 @@ public class Main {
 		System.out.println("");
 		System.out.println("Limitado o processamento aos dois primeiros números:");
 		lista.stream().filter(e -> e % 2 == 0).skip(2).limit(2).forEach(e -> System.out.println(e));
-		System.out.println("");		
+		System.out.println("");
 		System.out.println("Aplicado uma multiplicação por 2 em cada elemento:");
-		lista.stream().filter(e -> e % 2 == 0).skip(2).limit(2).map(e -> e *2).forEach(e -> System.out.println(e));
-		System.out.println("");	
-		System.out.println("Resultado final:");		
-		lista.stream().filter(e -> e % 2 == 0).skip(2).limit(2).map(e -> e *2).forEach(e -> System.out.println(e));
-		
+		lista.stream().filter(e -> e % 2 == 0).skip(2).limit(2).map(e -> e * 2).forEach(e -> System.out.println(e));
+		System.out.println("");
+		System.out.println("Resultado final:");
+		lista.stream().filter(e -> e % 2 == 0).skip(2).limit(2).map(e -> e * 2).forEach(e -> System.out.println(e));
 
 	}
 
